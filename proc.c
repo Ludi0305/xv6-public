@@ -11,6 +11,7 @@ struct {
   struct spinlock lock;
   struct proc proc[NPROC];
 } ptable;
+int readcount = 0;
 
 static struct proc *initproc;
 
